@@ -23,15 +23,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
+        cache: 'npm'
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: npm ci
     - name: Run ESLint and Prettier
       run: |
-          yarn lint 
-          yarn format --check 
-
+          npm run lint 
+          npm run format --check 
     - name: Build
-      run: yarn build
+      run: npm run build
     - name: Test
-      run: yarn test
+      run: npm test
