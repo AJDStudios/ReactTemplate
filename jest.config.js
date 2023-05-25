@@ -4,8 +4,8 @@ module.exports = {
   moduleFileExtensions: ["js", "jsx"],
   testMatch: ["<rootDir>/src/**/*.test.{js,jsx}"],
   "transform": {
-        "^.+\\.(js|jsx)$": "babel-jest"
-      },
+    "^.+\\.(js|jsx)$": "babel-jest"
+  },
   moduleNameMapper: {
     "\\.(css|less|scss)$": "identity-obj-proxy",
   },

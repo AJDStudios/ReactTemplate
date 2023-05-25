@@ -39,4 +39,5 @@ jobs:
       - name: Test
         run: npm test
       - name: Run Lighthouse CI
-        run: npx lhci autorun
+        run: npx lhci autorun --url=http://localhost:3000
+      
