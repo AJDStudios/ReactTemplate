@@ -6,9 +6,9 @@ module.exports = {
   "transform": {
     "^.+\\.(js|jsx)$": "babel-jest"
   },
-  moduleNameMapper: {
-    "\\.(css|less|scss)$": "identity-obj-proxy",
-  },
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "identity-obj-proxy",
+    },
   coveragePathIgnorePatterns: [
     "<rootDir>/node_modules/",
     "<rootDir>/src/setupTests.js",
