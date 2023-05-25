@@ -10,6 +10,7 @@ This is a template repository for a React project. It provides a basic setup and
 - **Testing**: The project uses Jest as the testing framework for unit testing components.
 - **Snapshot Testing**: Snapshot testing is implemented to capture and compare component snapshots for visual regression testing.
 - **Code Coverage**: Code coverage reports are generated and included in the CI workflow. You can view the coverage reports after running the tests.
+- **Performance Optimization**: Lighthouse CI is integrated into the pipeline to measure and monitor the performance of the application.
 - **Build**: The project is set up to build the React application using `react-scripts build`.
 - **Development Server**: Use `react-scripts start` to run the development server for local development.
 
