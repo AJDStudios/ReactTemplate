@@ -1,0 +1,11 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import App from '../App';
+
+test('renders the app component', () => {
+  render(<App />);
+});
+
+test('example test', () => {
+  expect(1 + 1).toBe(2);
+});
