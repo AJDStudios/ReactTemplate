@@ -8,6 +8,11 @@ test('renders the app component', () => {
   expect(asFragment()).toMatchSnapshot();
 });
 
+test('does not contain redundant code or comments', () => {
+  const { queryByText } = render(<App />);
+  expect(queryByText('<!-- Notice the use of %PUBLIC_URL% in the tags above.')).toBeNull();
+});
+
 //note that when you remove the splashscreen or update it, this test will also need to be removed or updated
 test('renders the splash screen', () => {
   const { getByTestId } = render(<App />);
