@@ -8,6 +8,28 @@ test('renders the app component', () => {
   expect(asFragment()).toMatchSnapshot();
 });
 
+test('loads the manifest file', () => {
+  const { getByTestId } = render(<App />);
+  const manifestLink = getByTestId('manifest-link');
+  expect(manifestLink).toBeInTheDocument();
+  expect(manifestLink.href).toContain('manifest.json');
+});
+
+test('does not contain redundant code or comments', () => {
+  const { queryByText } = render(<App />);
+  expect(queryByText('<!-- Notice the use of %PUBLIC_URL% in the tags above.')).toBeNull();
+});
+
+
+//note that this should be updated if the browser logo is changed
+test('renders the new logo', () => {
+  const { getByAltText } = render(<App />);
+  const logo = getByAltText('New Logo');
+  expect(logo).toBeInTheDocument();
+  expect(logo.src).toContain('AJDSicon.ico'); 
+});
+
+
 //note that when you remove the splashscreen or update it, this test will also need to be removed or updated
 test('renders the splash screen', () => {
   const { getByTestId } = render(<App />);
