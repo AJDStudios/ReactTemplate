@@ -40,14 +40,15 @@ The project structure is set up as follows:
 ## Testing
 
 The project includes Jest as the testing framework for unit testing components. To run the tests, use the following command:
-  - npm test
+
+- npm test
 
 Snapshot testing is also implemented to capture and compare component snapshots for visual regression testing.
 
 ## Code Coverage
 
 Code coverage reports are generated as part of the CI workflow. After running the tests, you can generate a code coverage report locally using the following command:
-  - npm run coverage
 
+- npm run coverage
 
 The coverage report will be generated in the `coverage/` directory.
