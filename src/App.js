@@ -1,18 +1,15 @@
 import React from 'react';
+import SplashScreen from './SplashScreen';
+import './App.css';
 
-function App() {
-  const name = 'AD';
-  const age = 33;
-  const city = 'Gloucester';
+const App = () => {
+  const isLoading = true; // Set this flag to indicate if the app is still loading or ready
 
   return (
-    <div>
-      <h1>Welcome to My template</h1>
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
-      <p>City: {city}</p>
+    <div className="app">
+      {isLoading ? <SplashScreen /> : <div>Main App Content</div>}
     </div>
   );
-}
+};
 
 export default App;

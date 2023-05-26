@@ -2,19 +2,19 @@
 
 exports[`renders the app component 1`] = `
 <DocumentFragment>
-  <div>
-    <h1>
-      Welcome to My template
-    </h1>
-    <p>
-      Name: AD
-    </p>
-    <p>
-      Age: 33
-    </p>
-    <p>
-      City: Gloucester
-    </p>
+  <div
+    class="app"
+  >
+    <div
+      class="splash-screen"
+      data-testid="splash-screen"
+    >
+      <div
+        class="splash-header"
+      >
+        An AJDStudios production
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
