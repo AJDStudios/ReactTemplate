@@ -1,4 +1,4 @@
-# React Template
+# AJDStudios React Template
 
 This is a template repository for a React project. It provides a basic setup and configuration for building React applications with a focus on code quality, linting, formatting, testing, and code coverage.
 
