@@ -6,6 +6,4 @@ test('renders the app component', () => {
   render(<App />);
 });
 
-test('example test', () => {
-  expect(1 + 1).toBe(2);
-});
+//any new tests can be added from here
