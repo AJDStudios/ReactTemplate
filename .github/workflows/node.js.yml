@@ -15,7 +15,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        #make sure this matches your local version
+        node-version: [18.x]
 
     steps:
       - uses: actions/checkout@v3
