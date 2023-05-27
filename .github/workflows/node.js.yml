@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - development
+      - add-lighthouse
   pull_request:
     branches:
       - main
