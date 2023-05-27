@@ -39,5 +39,5 @@ jobs:
       - name: Test
         run: npm test
       - name: Lighthouse Audit
-        run: npx lhci autorun
+        run: npm lhci autorun
 
