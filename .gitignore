@@ -9,6 +9,10 @@
 /coverage
 /__snapshots__/
 
+#performance
+lighthouse/
+
+
 # production
 /build
 

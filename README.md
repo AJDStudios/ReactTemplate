@@ -1,6 +1,6 @@
 # AJDStudios React Template
 
-This is a template repository for a React project. It provides a basic setup and configuration for building React applications with a focus on code quality, linting, formatting, testing, and code coverage.
+This is a template repository for a React project. It provides a basic setup and configuration for building React applications with a focus on code quality, linting, formatting, testing, code coverage, and performance auditing.
 
 ## Features
 
@@ -12,6 +12,7 @@ This is a template repository for a React project. It provides a basic setup and
 - **Code Coverage**: Code coverage reports are generated and included in the CI workflow. You can view the coverage reports after running the tests.
 - **Build**: The project is set up to build the React application using `react-scripts build`.
 - **Development Server**: Use `react-scripts start` to run the development server for local development.
+- **Performance Auditing**: Lighthouse is integrated for performance auditing. It measures key performance metrics, accessibility, best practices, and SEO of the application.
 
 ## Getting Started
 
@@ -23,7 +24,8 @@ To get started with the project, follow these steps:
 4. Build the project: `npm run build`
 5. Run tests: `npm test`
 6. Generate code coverage report: `npm run coverage`
-7. Start the development server: `npm start`
+7. Audit performance with Lighthouse: npm run lighthouse
+8. Start the development server: `npm start`
 
 ## Folder Structure
 
@@ -52,3 +54,11 @@ Code coverage reports are generated as part of the CI workflow. After running th
 - `npm run coverage`
 
 The coverage report will be generated in the `coverage/` directory.
+
+ ## Performance Auditing
+
+The project includes Lighthouse for auditing the performance of the application. To run the performance audit, use the following command:
+
+ - 'npm run lighthouse'
+
+Lighthouse measures key performance metrics, accessibility, best practices, and SEO of the application. The audit report will be generated in the terminal and can provide insights into areas for performance optimization.

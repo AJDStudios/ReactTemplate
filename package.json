@@ -2,7 +2,11 @@
   "name": "template",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
+    "@lhci/cli": "^0.12.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^13.5.0",
     "prettier": "^2.8.8",
@@ -16,6 +20,7 @@
     "test": "jest --coverage",
     "coverage": "jest --coverage",
     "format": "prettier --write .",
+    "lhci": "lhci autorun",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
