@@ -1,6 +1,28 @@
-describe('Math', () => {
-  test('performs a logic-based math calculation', () => {
-    const result = 2 + 2 * 2; // Perform a logic-based math calculation
-    expect(result).toEqual(6); // Assert the expected result
-  });
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import DeskNavBar from '../components/DeskNav';
+
+test('renders DeskNavBar on desktop screen', () => {
+  window.innerWidth = 1200;
+  render(
+    <MemoryRouter>
+      <DeskNavBar />
+    </MemoryRouter>
+  );
+
+  const deskNav = screen.getByRole('navigation');
+  expect(deskNav).toBeInTheDocument();
+});
+
+test('does not render DeskNavBar on mobile screen', () => {
+  window.innerWidth = 800;
+  render(
+    <MemoryRouter>
+      <DeskNavBar />
+    </MemoryRouter>
+  );
+
+  const deskNav = screen.queryByRole('navigation', { name: /desknav/i });
+  expect(deskNav).not.toBeInTheDocument();
 });
