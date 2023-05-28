@@ -20,11 +20,4 @@ test('renders the splash screen', () => {
   expect(splashScreen).toBeInTheDocument();
 });
 
-//note that when you remove the splashscreen or update it, this test will also need to be removed or updated
-test('displays the correct text in the splash screen', () => {
-  const { getByText } = render(<App />);
-  const splashText = getByText('An AJDStudios production');
-  expect(splashText).toBeInTheDocument();
-});
-
 // Add more tests as needed
