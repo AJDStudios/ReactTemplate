@@ -19,10 +19,6 @@ describe('Navigation', () => {
     window.dispatchEvent = jest.fn();
   });
 
-  afterEach(() => {
-    Object.assign(window, originalWindow);
-  });
-
   test('displays burger icon on mobile', () => {
     // Set the window.innerWidth to simulate a mobile screen
     window.innerWidth = 500;
