@@ -1,0 +1,27 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 998; 
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .site-logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .desknav {
+      display: none;
+    }
+  }
+  
