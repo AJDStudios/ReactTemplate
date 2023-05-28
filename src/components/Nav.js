@@ -22,7 +22,7 @@ function Navigation() {
           <div className="menu">
             <ul className="nav-links">
               <CustomLink to="/content">Content</CustomLink>
-              <CustomLink to="/OtherContent">OtherContent</CustomLink>
+              <CustomLink to="/MoreContent">MoreContent</CustomLink>
               <CustomLink to="/About">About</CustomLink>
               <CustomLink to="/Contact">Contact</CustomLink>
             </ul>
