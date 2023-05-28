@@ -87,4 +87,3 @@ The template includes basic navigation functionality with a burger menu icon tha
 To test the navigation functionality, refer to the testing section above and the existing unit test for the navigation component (`Nav.test.jsx`). The test ensures that the burger menu icon switches between the open and close states correctly when clicked.
 
 Once the routing functionality is implemented in `App.js`, additional tests can be written to cover the navigation and routing logic.
-
