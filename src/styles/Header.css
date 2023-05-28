@@ -39,7 +39,7 @@
   }
   
   @media (min-width: 1025px) {
-    .header .nav {
+    .header .nav  {
       display: none;
     }
   }
