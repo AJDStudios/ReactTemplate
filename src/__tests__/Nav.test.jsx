@@ -27,10 +27,10 @@ describe('Navigation', () => {
     // Set the window.innerWidth to simulate a mobile screen
     window.innerWidth = 500;
     window.dispatchEvent(new Event('resize'));
-
+  
     render(<Navigation />);
     screen.debug();
-
+  
     const burgerIconsMobile = screen.queryAllByText('☰');
     expect(burgerIconsMobile.length).toBe(1); // Expect burger icon to be displayed on mobile
   });
