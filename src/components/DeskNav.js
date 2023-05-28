@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import "../styles/DeskNav.css"
 
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
@@ -18,9 +19,9 @@ function DeskNavBar() {
     <nav className="desknav">
       <div className="deskmenu">
         <ul className="desknav-links">
-          <CustomLink to="/Content">Content</CustomLink>
-          <CustomLink to="/About">About</CustomLink>
+          <CustomLink to="/Content">Content</CustomLink>          
           <CustomLink to="/OtherContent">OtherContent</CustomLink>
+          <CustomLink to="/About">About</CustomLink>
           <CustomLink to="/Contact">Contact</CustomLink>
         </ul>
       </div>

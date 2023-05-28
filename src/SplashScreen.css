@@ -10,6 +10,7 @@
     justify-content: center;
     text-align: center;
     background-size: 100% auto;
+    overflow: hidden;
   }
   
   .splash-header {
