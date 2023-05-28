@@ -21,7 +21,7 @@ function DeskNavBar() {
       <div className="deskmenu">
         <ul className="desknav-links">
           <CustomLink to="/Content">Content</CustomLink>          
-          <CustomLink to="/OtherContent">OtherContent</CustomLink>
+          <CustomLink to="/MoreContent">MoreContent</CustomLink>
           <CustomLink to="/About">About</CustomLink>
           <CustomLink to="/Contact">Contact</CustomLink>
         </ul>
