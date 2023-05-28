@@ -1,6 +1,27 @@
-describe('Math', () => {
-  test('performs a logic-based math calculation', () => {
-    const result = 2 + 2 * 2; // Perform a logic-based math calculation
-    expect(result).toEqual(6); // Assert the expected result
-  });
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from '../components/Header';
+
+test('renders the logo and its link to "/"', () => {
+  render(
+    <Router>
+      <Header />
+    </Router>
+  );
+
+  const logoLink = screen.getByRole('link', { name: /An AJDStudios production/i });
+  expect(logoLink).toBeInTheDocument();
+  expect(logoLink).toHaveAttribute('href', '/');
+});
+
+test('renders text below the logo', () => {
+  render(
+    <Router>
+      <Header />
+    </Router>
+  );
+
+  const logoText = screen.getByText(/An AJDStudios production/i);
+  expect(logoText).toBeInTheDocument();
 });
