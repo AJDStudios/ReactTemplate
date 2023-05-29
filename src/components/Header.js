@@ -33,13 +33,14 @@ function handleSettingsToggle() {
                 <div className="settings-dropdown">
                   <ul>
                     <li>Theme: Light/Dark</li>
-                    <li>Language: English</li>
-                    <li>Language: French</li>
-                    <li>Language: German</li>
-                    <li>Language: Spanish</li>
-                    <li>Language: Czech</li>
-                    <li>Language: Russian</li>
-                    <li>Language: Welsh</li>
+                    <li>Language: 🏴󠁧󠁢󠁥󠁮󠁧󠁿</li>
+                    <li>Language: 🇫🇷</li>
+                    <li>Language: 🇩🇪</li>
+                    <li>Language: 🇪🇸</li>
+                    <li>Language: 🇨🇿</li>
+                    <li>Language: 🇷🇺</li>
+                    <li>Language: 🏴󠁧󠁢󠁷󠁬󠁳󠁿</li>
+                    <li>Language: 🇺🇦</li>
                     <li>Language: Latin</li>
                   </ul>
                 </div>
