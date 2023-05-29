@@ -7,8 +7,9 @@ function CustomLink({ to, children }) {
 }
 
 function Navigation() {
-    const [showMenu, setShowMenu] = useState(false);
-  
+  const [showMenu, setShowMenu] = useState(false);
+
+
     return (
       <nav className="nav">
         <span
