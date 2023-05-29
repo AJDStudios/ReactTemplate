@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header.js';
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Content from "./pages/Content.js";
 import MoreContent from "./pages/MoreContent.js";
 import About from "./pages/About.js";
@@ -31,7 +31,7 @@ const App = () => {
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer /> 
         </Router>
       )}
     </div>
